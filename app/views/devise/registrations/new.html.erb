@@ -1,5 +1,7 @@
 <h2>Sign up</h2>
 
+<%= link_to "깃헙으로 로그인하기", user_github_omniauth_authorize_path %>
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
